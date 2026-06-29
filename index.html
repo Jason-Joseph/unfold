@@ -277,6 +277,8 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
     from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+  import { getFirestore, doc, setDoc, getDoc }
+    from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
   const firebaseConfig = {
     apiKey: "AIzaSyCw7Oc83HSy9vxF2z76N7QC6N4QCVmJOTw",
@@ -291,6 +293,12 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();
+
+  const db = getFirestore(app);
+  window.firestoreDb = db;
+  window.firestoreDoc = doc;
+  window.firestoreSetDoc = setDoc;
+  window.firestoreGetDoc = getDoc;
 
   // Expose globally for non-module scripts
   window.firebaseApp = app;
@@ -688,17 +696,37 @@ let lsOk     = false;       // localStorage available?
 
 // ── Persistence ────────────────────────────────────────────────────────────
 function initStorage(){
-  try{
-    localStorage.setItem('_uf_test','1');
-    localStorage.removeItem('_uf_test');
-    lsOk = true;
-    const raw = localStorage.getItem('unfold_v1');
-    if(raw) seen = JSON.parse(raw);
-  } catch(e){ lsOk = false; }
+  try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); lsOk=true; }
+  catch(e){ lsOk=false; }
+
+  const loadFromJson = (raw) => {
+    try { seen = JSON.parse(raw) || {}; } catch(e){ seen={}; }
+  };
+
+  if(window.currentUser && window.firestoreDb){
+    const ref = window.firestoreDoc(window.firestoreDb, 'progress', window.currentUser.uid);
+    window.firestoreGetDoc(ref).then(snap => {
+      if(snap.exists() && snap.data().seen){
+        loadFromJson(snap.data().seen);
+      } else if(lsOk){
+        loadFromJson(localStorage.getItem('unfold_v1'));
+      }
+      buildPool(); updateChips();
+    }).catch(() => {
+      if(lsOk) loadFromJson(localStorage.getItem('unfold_v1'));
+      buildPool(); updateChips();
+    });
+  } else {
+    if(lsOk) loadFromJson(localStorage.getItem('unfold_v1'));
+  }
 }
 function saveState(){
-  if(!lsOk) return;
-  try{ localStorage.setItem('unfold_v1', JSON.stringify(seen)); } catch(e){}
+  if(lsOk) localStorage.setItem('unfold_v1', JSON.stringify(seen));
+  if(window.currentUser && window.firestoreDb){
+    const ref = window.firestoreDoc(window.firestoreDb, 'progress', window.currentUser.uid);
+    window.firestoreSetDoc(ref, { seen: JSON.stringify(seen) }, { merge: true })
+      .catch(()=>{});
+  }
 }
 function cardId(k, idx){ return k+':'+idx; }
 function isSeen(k, idx){ return !!seen[cardId(k,idx)]; }
