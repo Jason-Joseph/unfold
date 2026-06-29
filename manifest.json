@@ -1,0 +1,24 @@
+{
+  "name": "Unfold",
+  "short_name": "Unfold",
+  "description": "A conversation card game",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1c1410",
+  "theme_color": "#1c1410",
+  "icons": [
+    {
+      "src": "/apk/assets/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apk/assets/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
