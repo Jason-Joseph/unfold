@@ -1,0 +1,4 @@
+*.apk
+graphify-out/
+.superpowers/
+docs/
