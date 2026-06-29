@@ -825,6 +825,7 @@ function updateChips(){
 // ── Chips ──────────────────────────────────────────────────────────────────
 function buildChips(){
   const el=document.getElementById('decks');
+  el.innerHTML='';
   const all=document.createElement('div');
   all.className='chip all'; all.dataset.on='1';
   all.style.setProperty('--c','var(--ink)');
@@ -841,8 +842,15 @@ function buildChips(){
   }
 }
 function toggle(k){
-  if(active.has(k)) active.delete(k); else active.add(k);
-  if(active.size===0) active.add(k);
+  const allOn=active.size===Object.keys(CATS).length;
+  if(allOn){
+    active=new Set([k]);
+  } else if(active.has(k)){
+    active.delete(k);
+    if(active.size===0) active=new Set(Object.keys(CATS));
+  } else {
+    active.add(k);
+  }
   syncChips(); buildPool(); updateChips(); setBackState();
 }
 function syncChips(){
