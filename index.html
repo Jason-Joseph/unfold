@@ -271,6 +271,22 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   width:32px;height:32px;border-radius:50%;object-fit:cover;
 }
 .sso-name{font-size:.8rem;color:var(--ink);font-family:'Space Mono',monospace;}
+.sso-back{
+  display:block;width:100%;margin-top:4px;
+  background:transparent;border:none;color:#6b5742;
+  font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.05em;
+  cursor:pointer;padding:8px;opacity:.7;
+}
+.sso-back:active{opacity:1;}
+/* ── In-game home button ── */
+.nav-home{
+  position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  background:transparent;border:none;color:var(--ink);opacity:.35;
+  font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.06em;
+  cursor:pointer;padding:10px 6px;line-height:1;
+  transition:opacity .15s;
+}
+.nav-home:active{opacity:.9;}
 </style>
 <!-- Firebase -->
 <script type="module">
@@ -344,6 +360,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 <!-- ── Game Screen ── -->
 <div id="screen-game" class="screen">
 <header>
+  <button class="nav-home" onclick="showScreen('screen-lobby')" aria-label="Home">&#8962; Home</button>
   <div class="eyebrow">A Conversation Card Game</div>
   <h1>Un<em>fold</em></h1>
   <p class="tagline">One card at a time, everyone unfolds a little.</p>
@@ -418,6 +435,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
       Continue with Google
     </button>
     <button class="sso-guest" onclick="handleSsoSkip()">Play as Guest</button>
+    <button class="sso-back" onclick="showScreen('screen-lobby')">&#8592; Back to lobby</button>
   </div>
 </div>
 
