@@ -1,0 +1,252 @@
+{
+  "communities": {
+    "0": [
+      "apk_app_eas_projectid",
+      "apk_app_expo",
+      "apk_app_expo_extra",
+      "apk_app_expo_icon",
+      "apk_app_expo_ios",
+      "apk_app_expo_name",
+      "apk_app_expo_orientation",
+      "apk_app_expo_owner",
+      "apk_app_expo_plugins",
+      "apk_app_expo_slug",
+      "apk_app_expo_userinterfacestyle",
+      "apk_app_expo_version",
+      "apk_app_expo_web",
+      "apk_app_extra_eas",
+      "apk_app_ios_bundleidentifier",
+      "apk_app_ios_supportstablet",
+      "apk_app_json_apk_app",
+      "apk_app_web_favicon"
+    ],
+    "1": [
+      "auto_reset",
+      "card_flip_animation",
+      "card_pool",
+      "chip_progress_display",
+      "deck_toggle",
+      "keyboard_shortcuts",
+      "localstorage_persistence",
+      "manual_reset",
+      "mark_card_answered_skipped",
+      "progress_bar",
+      "progress_tracking",
+      "soft_shuffle",
+      "toast_notification"
+    ],
+    "2": [
+      "apk_package",
+      "apk_package_main",
+      "apk_package_name",
+      "apk_package_private",
+      "apk_package_scripts",
+      "apk_package_scripts_android",
+      "apk_package_scripts_ios",
+      "apk_package_scripts_start",
+      "apk_package_scripts_web",
+      "apk_package_version"
+    ],
+    "3": [
+      "card_deal_animation",
+      "conversation_deck_html",
+      "index_html",
+      "jason_tjiadi",
+      "pwa_meta",
+      "single_html_file",
+      "typography",
+      "unfold_app",
+      "vanilla_js",
+      "vercel_deployment"
+    ],
+    "4": [
+      "cats_data_structure",
+      "css_design_system",
+      "deck_friends",
+      "deck_gettoknow",
+      "deck_hottakes",
+      "deck_icebreakers",
+      "deck_relationship",
+      "deck_thisthat",
+      "deck_truthtruth"
+    ],
+    "5": [
+      "android_icon_background",
+      "android_icon_foreground",
+      "android_icon_monochrome",
+      "expo_eas",
+      "favicon_png",
+      "icon_png",
+      "splash_icon_png"
+    ],
+    "6": [
+      "apk_app_adaptiveicon_backgroundcolor",
+      "apk_app_adaptiveicon_backgroundimage",
+      "apk_app_adaptiveicon_foregroundimage",
+      "apk_app_adaptiveicon_monochromeimage",
+      "apk_app_android_adaptiveicon",
+      "apk_app_android_package",
+      "apk_app_expo_android"
+    ],
+    "7": [
+      "apk_package_dependencies",
+      "apk_package_dependencies_expo",
+      "apk_package_dependencies_expo_status_bar",
+      "apk_package_dependencies_react",
+      "apk_package_dependencies_react_native",
+      "apk_package_dependencies_react_native_webview",
+      "apk_package_dependencies_sharp"
+    ],
+    "8": [
+      "apk_app_app",
+      "apk_app_js_apk_app",
+      "apk_app_styles",
+      "apk_index"
+    ],
+    "9": [
+      "apk_agents_md",
+      "apk_claude_md"
+    ],
+    "10": [
+      "apk_generate_icon",
+      "apk_generate_icon_buf"
+    ],
+    "11": [
+      "watermark"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1111111111111111,
+    "1": 0.1794871794871795,
+    "2": 0.2,
+    "3": 0.2222222222222222,
+    "4": 0.3888888888888889,
+    "5": 0.2857142857142857,
+    "6": 0.2857142857142857,
+    "7": 0.2857142857142857,
+    "8": 0.5,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "apk_app_expo",
+      "label": "expo",
+      "degree": 13
+    },
+    {
+      "id": "apk_app_android_adaptiveicon",
+      "label": "adaptiveIcon",
+      "degree": 5
+    },
+    {
+      "id": "apk_package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "apk_app_expo_ios",
+      "label": "ios",
+      "degree": 3
+    },
+    {
+      "id": "apk_app_expo_android",
+      "label": "android",
+      "degree": 3
+    },
+    {
+      "id": "apk_app_app",
+      "label": "App()",
+      "degree": 2
+    },
+    {
+      "id": "apk_app_expo_web",
+      "label": "web",
+      "degree": 2
+    },
+    {
+      "id": "apk_app_expo_extra",
+      "label": "extra",
+      "degree": 2
+    },
+    {
+      "id": "apk_app_extra_eas",
+      "label": "eas",
+      "degree": 2
+    },
+    {
+      "id": "apk_app_styles",
+      "label": "styles",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Card Flip Animation",
+      "target": "Unfold",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "note": "Bridges community 3 → community 1"
+    },
+    {
+      "source": "Unfold",
+      "target": "CATS Data Structure",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "note": "Bridges community 3 → community 4"
+    },
+    {
+      "source": "Unfold",
+      "target": "Expo EAS (Android APK Build)",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "note": "Bridges community 3 → community 5"
+    },
+    {
+      "source": "Card Pool",
+      "target": "CATS Data Structure",
+      "source_files": [
+        "",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "note": "Bridges community 4 → community 1"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `expo` connect `Community 0` to `Community 6`?",
+      "why": "High betweenness centrality (0.063) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `android` connect `Community 6` to `Community 0`?",
+      "why": "High betweenness centrality (0.029) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `styles`, `name`, `slug` to the rest of the system?",
+      "why": "33 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

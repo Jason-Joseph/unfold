@@ -1,0 +1,909 @@
+{
+  "nodes": [
+    {
+      "id": "apk_app_js_apk_app",
+      "label": "App.js",
+      "file_type": "code",
+      "source_file": "apk/App.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_app",
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "apk/App.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_styles",
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "apk/App.js",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_json_apk_app",
+      "label": "app.json",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo",
+      "label": "expo",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_slug",
+      "label": "slug",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_orientation",
+      "label": "orientation",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_icon",
+      "label": "icon",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_userinterfacestyle",
+      "label": "userInterfaceStyle",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_ios",
+      "label": "ios",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_ios_supportstablet",
+      "label": "supportsTablet",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_ios_bundleidentifier",
+      "label": "bundleIdentifier",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_android",
+      "label": "android",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_android_package",
+      "label": "package",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_android_adaptiveicon",
+      "label": "adaptiveIcon",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_adaptiveicon_backgroundcolor",
+      "label": "backgroundColor",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_adaptiveicon_foregroundimage",
+      "label": "foregroundImage",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_adaptiveicon_backgroundimage",
+      "label": "backgroundImage",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_adaptiveicon_monochromeimage",
+      "label": "monochromeImage",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_web",
+      "label": "web",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_web_favicon",
+      "label": "favicon",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_plugins",
+      "label": "plugins",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_extra",
+      "label": "extra",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_extra_eas",
+      "label": "eas",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_eas_projectid",
+      "label": "projectId",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_app_expo_owner",
+      "label": "owner",
+      "file_type": "code",
+      "source_file": "apk/app.json",
+      "source_location": "L31",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_generate_icon",
+      "label": "generate-icon.mjs",
+      "file_type": "code",
+      "source_file": "apk/generate-icon.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_generate_icon_buf",
+      "label": "buf",
+      "file_type": "code",
+      "source_file": "apk/generate-icon.mjs",
+      "source_location": "L98",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_index",
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "apk/index.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package",
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_main",
+      "label": "main",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies",
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies_expo",
+      "label": "expo",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies_expo_status_bar",
+      "label": "expo-status-bar",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies_react",
+      "label": "react",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies_react_native",
+      "label": "react-native",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies_react_native_webview",
+      "label": "react-native-webview",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_dependencies_sharp",
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_scripts",
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_scripts_start",
+      "label": "start",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_scripts_android",
+      "label": "android",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_scripts_ios",
+      "label": "ios",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_scripts_web",
+      "label": "web",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "apk_package_private",
+      "label": "private",
+      "file_type": "code",
+      "source_file": "apk/package.json",
+      "source_location": "L19",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apk_app_js_apk_app",
+      "target": "expo_status_bar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/App.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_js_apk_app",
+      "target": "react_native",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/App.js",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_js_apk_app",
+      "target": "react_native_webview",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/App.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_js_apk_app",
+      "target": "apk_app_app",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/App.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_js_apk_app",
+      "target": "apk_app_styles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/App.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_json_apk_app",
+      "target": "apk_app_expo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_slug",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_orientation",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_icon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_userinterfacestyle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_ios",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo_ios",
+      "target": "apk_app_ios_supportstablet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo_ios",
+      "target": "apk_app_ios_bundleidentifier",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_android",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo_android",
+      "target": "apk_app_android_package",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo_android",
+      "target": "apk_app_android_adaptiveicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_android_adaptiveicon",
+      "target": "apk_app_adaptiveicon_backgroundcolor",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_android_adaptiveicon",
+      "target": "apk_app_adaptiveicon_foregroundimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_android_adaptiveicon",
+      "target": "apk_app_adaptiveicon_backgroundimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_android_adaptiveicon",
+      "target": "apk_app_adaptiveicon_monochromeimage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_web",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo_web",
+      "target": "apk_app_web_favicon",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_plugins",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_extra",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo_extra",
+      "target": "apk_app_extra_eas",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_extra_eas",
+      "target": "apk_app_eas_projectid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_app_expo",
+      "target": "apk_app_expo_owner",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/app.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_generate_icon",
+      "target": "sharp",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/generate-icon.mjs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_generate_icon",
+      "target": "apk_generate_icon_buf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/generate-icon.mjs",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_index",
+      "target": "expo",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/index.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_index",
+      "target": "apk_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/index.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package",
+      "target": "apk_package_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package",
+      "target": "apk_package_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package",
+      "target": "apk_package_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package",
+      "target": "apk_package_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies",
+      "target": "apk_package_dependencies_expo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies_expo",
+      "target": "expo",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "apk_package_dependencies",
+      "target": "apk_package_dependencies_expo_status_bar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies_expo_status_bar",
+      "target": "expo_status_bar",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "apk_package_dependencies",
+      "target": "apk_package_dependencies_react",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies_react",
+      "target": "react",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "apk_package_dependencies",
+      "target": "apk_package_dependencies_react_native",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies_react_native",
+      "target": "react_native",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "apk_package_dependencies",
+      "target": "apk_package_dependencies_react_native_webview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies_react_native_webview",
+      "target": "react_native_webview",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "apk_package_dependencies",
+      "target": "apk_package_dependencies_sharp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_dependencies_sharp",
+      "target": "sharp",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "apk_package",
+      "target": "apk_package_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_scripts",
+      "target": "apk_package_scripts_start",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_scripts",
+      "target": "apk_package_scripts_android",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_scripts",
+      "target": "apk_package_scripts_ios",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package_scripts",
+      "target": "apk_package_scripts_web",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_package",
+      "target": "apk_package_private",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/package.json",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "apk_index",
+      "target": "apk_app_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "apk/index.js",
+      "source_location": "L3",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
