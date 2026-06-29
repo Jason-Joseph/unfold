@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Unfold â€” A Conversation Card Game</title>
+<title>Unfold — A Conversation Card Game</title>
 <meta name="theme-color" content="#1c1410">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -184,11 +184,11 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   button.act{font-size:.7rem;padding:14px 16px}
 }
 
-/* â”€â”€ Screen management â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── Screen management ─────────────────────────────── */
 .screen{display:none;min-height:100vh;flex-direction:column;}
 .screen.active{display:flex;}
 
-/* â”€â”€ Lobby screen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── Lobby screen ──────────────────────────────────── */
 #screen-lobby{
   align-items:center;justify-content:center;
   background:var(--bg);padding:40px 24px;
@@ -215,7 +215,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   text-transform:uppercase;color:var(--muted);margin-top:4px;
 }
 
-/* â”€â”€ End Screen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── End Screen ─────────────────────────────────────── */
 #screen-end{
   align-items:center;justify-content:center;
   background:var(--bg);padding:40px 24px;text-align:center;gap:24px;
@@ -236,7 +236,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 }
 .end-actions{display:flex;flex-direction:column;gap:12px;width:100%;max-width:280px;}
 
-/* â”€â”€ SSO Gate â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── SSO Gate ───────────────────────────────────────── */
 #screen-sso-gate{
   align-items:center;justify-content:center;
   background:var(--bg);padding:40px 24px;text-align:center;gap:0;
@@ -283,7 +283,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   cursor:pointer;padding:8px;opacity:.7;
 }
 .sso-back:active{opacity:1;}
-/* â”€â”€ In-game home button â”€â”€ */
+/* ── In-game home button ── */
 .nav-home{
   position:absolute;left:12px;top:50%;transform:translateY(-50%);
   background:transparent;border:none;color:var(--ink);opacity:.35;
@@ -347,7 +347,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 </script>
 </head>
 <body>
-<!-- â”€â”€ Lobby Screen â”€â”€ -->
+<!-- ── Lobby Screen ── -->
 <div id="screen-lobby" class="screen active">
   <div class="lobby-logo">
     <h1>Un<em>fold</em></h1>
@@ -362,7 +362,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
     </div>
   </div>
 </div>
-<!-- â”€â”€ Game Screen â”€â”€ -->
+<!-- ── Game Screen ── -->
 <div id="screen-game" class="screen">
 <header>
   <button class="nav-home" onclick="showScreen('screen-lobby')" aria-label="Home">&#8962; Home</button>
@@ -396,7 +396,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 
   <div class="progress-row" id="progressRow">
     <div class="prog-bar"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
-    <span id="countTxt">â€” cards left</span>
+    <span id="countTxt">— cards left</span>
   </div>
 </div>
 
@@ -408,7 +408,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 <div class="toast" id="toast"></div>
 </div><!-- /screen-game -->
 
-<!-- â”€â”€ End Screen â”€â”€ -->
+<!-- ── End Screen ── -->
 <div id="screen-end" class="screen">
   <div class="end-badge">&#127183;</div>
   <p class="end-headline" id="endHeadline">You unfolded<br>every card.</p>
@@ -420,7 +420,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   </div>
 </div>
 
-<!-- â”€â”€ SSO Gate â”€â”€ -->
+<!-- ── SSO Gate ── -->
 <div id="screen-sso-gate" class="screen">
   <div class="sso-card">
     <div class="sso-icon">&#128100;</div>
@@ -445,7 +445,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 </div>
 
 <script>
-// â”€â”€ Screen management â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Screen management ──────────────────────────────────────────────────────
 function showScreen(id){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
@@ -480,7 +480,7 @@ function handleSsoSignIn(){
     })
     .catch(err => {
       if(err.code !== 'auth/popup-closed-by-user'){
-        showToast('Sign-in failed â€” try again', 2500);
+        showToast('Sign-in failed — try again', 2500);
       }
     });
 }
@@ -496,7 +496,7 @@ function showEndScreen(){
   document.getElementById('endHeadline').innerHTML =
     'You unfolded<br>' + total + ' card' + (total!==1?'s':'.') + '.';
   document.getElementById('endSub').textContent =
-    'Great conversation â€” all decks seen!';
+    'Great conversation — all decks seen!';
   showScreen('screen-end');
 }
 function endReplay(){
@@ -586,18 +586,18 @@ const CATS = {
       "What\u2019s your most defensible petty pet peeve?",
       "What hill are you genuinely willing to die on?"
     ,
-      "Whatâ€™s an opinion you hold that would make people uncomfortable if you said it at a dinner party?",
-      "Whatâ€™s a life milestone thatâ€™s wildly overrated â€” marriage, homeownership, having kids?",
+      "What’s an opinion you hold that would make people uncomfortable if you said it at a dinner party?",
+      "What’s a life milestone that’s wildly overrated — marriage, homeownership, having kids?",
       "Is ambition actually attractive, or does it just mean someone will eventually deprioritise you?",
-      "Whatâ€™s the most dishonest thing people say on a first date?",
+      "What’s the most dishonest thing people say on a first date?",
       "Has social media made people more connected, or just better at performing connection?",
-      "Is â€˜finding yourselfâ€™ a luxury or a necessity? (think: therapy, solo travel, sabbaticals â€” who actually gets to do this?)",
-      "Whatâ€™s something your generation gets wrong that youâ€™d never say publicly?",
+      "Is ‘finding yourself’ a luxury or a necessity? (think: therapy, solo travel, sabbaticals — who actually gets to do this?)",
+      "What’s something your generation gets wrong that you’d never say publicly?",
       "Is it selfish to prioritise your own happiness above the people you love?",
-      "Whatâ€™s a system everyone complains about but nobody actually tries to change? (e.g. the 9-5 grind, dating apps, the education system, healthcare)",
+      "What’s a system everyone complains about but nobody actually tries to change? (e.g. the 9-5 grind, dating apps, the education system, healthcare)",
       "At what point does ambition become selfishness?",
       "Is it possible to be truly happy without knowing what your purpose is?",
-      "Whatâ€™s something society rewards that it absolutely shouldnâ€™t? (e.g. being constantly busy, emotional unavailability, overworking)"]},
+      "What’s something society rewards that it absolutely shouldn’t? (e.g. being constantly busy, emotional unavailability, overworking)"]},
   gettoknow:{name:"Get to Know You", color:"var(--rust)", foot:"Stories and the real you.",
     cards:[
       "What\u2019s the most main-character moment you\u2019ve ever had in real life?",
@@ -640,18 +640,18 @@ const CATS = {
       "Who do you call first with amazing news, and who with terrible news \u2014 and am I on either list?",
       "What\u2019s something you\u2019ve wanted to do together but assumed I wouldn\u2019t be up for?"
     ,
-      "Whatâ€™s a fear youâ€™ve never said out loud to anyone in this room?",
-      "Where do you see yourself in five years â€” and does that picture excite or terrify you?",
-      "Whatâ€™s something youâ€™re quietly working through right now that most people donâ€™t know? (e.g. a career decision, a relationship, your mental health, grief, a big life change)",
+      "What’s a fear you’ve never said out loud to anyone in this room?",
+      "Where do you see yourself in five years — and does that picture excite or terrify you?",
+      "What’s something you’re quietly working through right now that most people don’t know? (e.g. a career decision, a relationship, your mental health, grief, a big life change)",
       "If you could change one thing about how you show up as a friend, what would it be?",
-      "Whatâ€™s a dream youâ€™ve quietly set aside â€” and do you still think about it?",
-      "Whatâ€™s something you need right now that you havenâ€™t asked anyone for? (e.g. more check-ins, less advice, someone to just listen without fixing)",
-      "Whatâ€™s the hardest thing youâ€™ve had to forgive someone for?",
-      "Whatâ€™s something you wish you could be more honest with the world about? (e.g. how you really feel, what you actually want, what youâ€™re quietly going through)",
+      "What’s a dream you’ve quietly set aside — and do you still think about it?",
+      "What’s something you need right now that you haven’t asked anyone for? (e.g. more check-ins, less advice, someone to just listen without fixing)",
+      "What’s the hardest thing you’ve had to forgive someone for?",
+      "What’s something you wish you could be more honest with the world about? (e.g. how you really feel, what you actually want, what you’re quietly going through)",
       "When was the last time you felt genuinely lonely, even around people?",
-      "Whatâ€™s a version of yourself you used to be that you kind of miss? (e.g. more carefree, more bold, more present â€” what happened to that person?)",
-      "Whatâ€™s the conversation you keep almost having but never quite do?",
-      "If weâ€™re still close in 10 years, what do you hope stays the same between us?"]},
+      "What’s a version of yourself you used to be that you kind of miss? (e.g. more carefree, more bold, more present — what happened to that person?)",
+      "What’s the conversation you keep almost having but never quite do?",
+      "If we’re still close in 10 years, what do you hope stays the same between us?"]},
   relationship:{name:"Relationships", color:"var(--wine)", foot:"Building and keeping a \u2018we\u2019.",
     cards:[
       "What\u2019s your love language, and what\u2019s the one people keep giving you that just doesn\u2019t land?",
@@ -667,18 +667,18 @@ const CATS = {
       "What are your honest boundaries around exes, jealousy, and close friends? (e.g. late-night texts, one-on-one hangs, liking old photos)",
       "What makes you feel respected by a partner, separate from feeling loved? (e.g. they don\u2019t dismiss your opinions, they defend you, they take your time seriously)"
     ,
-      "Whatâ€™s your biggest fear in a relationship â€” and has it ever come true?",
+      "What’s your biggest fear in a relationship — and has it ever come true?",
       "Where do you see yourself relationship-wise in five years, and does that feel close or far?",
-      "Whatâ€™s something youâ€™ve never fully admitted to a partner but have always felt?",
-      "What does emotional safety mean to you â€” and have you ever fully had it? (e.g. being unjudged when vulnerable, saying hard things without fear, crying without it becoming a problem)",
-      "Whatâ€™s the version of love you grew up watching, and how has it shaped what you look for?",
-      "Whatâ€™s a pattern you keep repeating in relationships that youâ€™re aware of but havenâ€™t broken? (e.g. choosing emotionally unavailable people, pulling away when things get serious, over-giving)",
+      "What’s something you’ve never fully admitted to a partner but have always felt?",
+      "What does emotional safety mean to you — and have you ever fully had it? (e.g. being unjudged when vulnerable, saying hard things without fear, crying without it becoming a problem)",
+      "What’s the version of love you grew up watching, and how has it shaped what you look for?",
+      "What’s a pattern you keep repeating in relationships that you’re aware of but haven’t broken? (e.g. choosing emotionally unavailable people, pulling away when things get serious, over-giving)",
       "What does it take for you to feel truly vulnerable with someone? (e.g. time, seeing them be vulnerable first, knowing they won\u2019t use it against you)",
       "Have you ever stayed in something longer than you should have? What kept you there?",
-      "Whatâ€™s something you need a partner to understand about you before things get serious?",
+      "What’s something you need a partner to understand about you before things get serious?",
       "What does commitment mean to you beyond just staying? (e.g. choosing each other during conflict, growing together, showing up when it\u2019s inconvenient)",
-      "Whatâ€™s the thing about love that scares you the most?",
-      "What would a relationship have to look like for you to feel like itâ€™s the one? (e.g. ease during conflict, being fully known, sharing the same vision for the future)"]},
+      "What’s the thing about love that scares you the most?",
+      "What would a relationship have to look like for you to feel like it’s the one? (e.g. ease during conflict, being fully known, sharing the same vision for the future)"]},
   truthtruth:{name:"Truth or Truth", color:"var(--amber)", foot:"No passing. No dodging. Just honesty.",
     cards:[
       "What\u2019s something you\u2019ve done that you\u2019ve never told anyone in this room?",
@@ -708,7 +708,7 @@ const CATS = {
     ]}
 };
 
-// â”€â”€ State â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── State ──────────────────────────────────────────────────────────────────
 let active   = new Set(Object.keys(CATS));
 let pool     = [];          // unseen cards for this draw session
 let dealt    = false;
@@ -717,7 +717,7 @@ let currentCard = null;     // {k, idx, t} of the showing card
 let seen     = {};           // "deckKey:idx" -> "answered"|"skipped"
 let lsOk     = false;       // localStorage available?
 
-// â”€â”€ Persistence â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Persistence ────────────────────────────────────────────────────────────
 function initStorage(){
   try{ localStorage.setItem('__t','1'); localStorage.removeItem('__t'); lsOk=true; }
   catch(e){ lsOk=false; }
@@ -758,7 +758,7 @@ function markSeen(k, idx, status){
   saveState();
 }
 
-// â”€â”€ Pool â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Pool ───────────────────────────────────────────────────────────────────
 function buildPool(){
   pool = [];
   active.forEach(k => {
@@ -773,7 +773,7 @@ function buildPool(){
   }
 }
 
-// â”€â”€ Counts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Counts ─────────────────────────────────────────────────────────────────
 function unseenCount(k){
   return CATS[k].cards.filter((_,idx)=>!isSeen(k,idx)).length;
 }
@@ -789,7 +789,7 @@ function totalSeen(){
   }); return n;
 }
 
-// â”€â”€ UI Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── UI Helpers ─────────────────────────────────────────────────────────────
 function showToast(msg, duration=2800){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
@@ -827,7 +827,7 @@ function updateChips(){
   updateProgress();
 }
 
-// â”€â”€ Chips â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Chips ──────────────────────────────────────────────────────────────────
 function buildChips(){
   const el=document.getElementById('decks');
   el.innerHTML='';
@@ -866,7 +866,7 @@ function syncChips(){
   document.querySelector('.chip.all').dataset.on=allOn?'1':'0';
 }
 
-// â”€â”€ Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Card ───────────────────────────────────────────────────────────────────
 const cardEl=()=>document.getElementById('card');
 function setBackState(){
   document.getElementById('catName').textContent='\u2014';
@@ -940,7 +940,7 @@ function confirmReset(){
   }
 }
 
-// â”€â”€ Init â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ── Init ───────────────────────────────────────────────────────────────────
 document.addEventListener('keydown',e=>{
   if(e.code==='Space'){e.preventDefault(); revealed?markCard('answered'):draw();}
   if(e.key==='f'||e.key==='F') handleCardTap();
@@ -952,7 +952,7 @@ function initGame(){
   buildPool();
   updateChips();
 }
-// Lobby is the entry point — do NOT auto-init game on load
+// Lobby is the entry point � do NOT auto-init game on load
 if('serviceWorker' in navigator){
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').catch(()=>{});
@@ -968,6 +968,6 @@ if('serviceWorker' in navigator){
   pointer-events:none;user-select:none;
 }
 </style>
-<div class="watermark">Â© Jason Tjiadi</div>
+<div class="watermark">© Jason Tjiadi</div>
 </body>
 </html>
