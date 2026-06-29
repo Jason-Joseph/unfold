@@ -1,1 +1,4 @@
 .vercel
+*.apk
+graphify-out/
+.superpowers/
