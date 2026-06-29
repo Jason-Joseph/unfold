@@ -178,9 +178,57 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   .controls{gap:8px}
   button.act{font-size:.7rem;padding:14px 16px}
 }
+
+/* ── Screen management ─────────────────────────────── */
+.screen{display:none;min-height:100vh;flex-direction:column;}
+.screen.active{display:flex;}
+
+/* ── Lobby screen ──────────────────────────────────── */
+#screen-lobby{
+  align-items:center;justify-content:center;
+  background:var(--bg);padding:40px 24px;
+  text-align:center;gap:0;
+}
+.lobby-logo{margin-bottom:48px;}
+.lobby-logo h1{font-family:Georgia,serif;font-size:3rem;color:var(--ink);margin:0;}
+.lobby-logo h1 em{color:var(--rust);font-style:italic;}
+.lobby-logo .tagline{margin-top:10px;font-size:.85rem;color:var(--muted);letter-spacing:.06em;}
+.lobby-actions{display:flex;flex-direction:column;gap:16px;width:100%;max-width:320px;}
+.lobby-primary{
+  font-size:1.05rem;padding:18px 32px;
+  background:var(--rust);color:var(--parchment);
+  border:none;border-radius:12px;cursor:pointer;
+  font-family:'Space Mono',monospace;letter-spacing:.08em;
+  box-shadow:0 6px 20px rgba(193,74,43,.35);
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.lobby-primary:active{transform:scale(.97);box-shadow:0 3px 10px rgba(193,74,43,.25);}
+.lobby-online{display:flex;gap:12px;}
+.lobby-online .act{flex:1;font-size:.78rem;padding:14px 10px;}
+.lobby-label{
+  font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);margin-top:4px;
+}
 </style>
 </head>
 <body>
+<!-- ── Lobby Screen ── -->
+<div id="screen-lobby" class="screen active">
+  <div class="lobby-logo">
+    <h1>Un<em>fold</em></h1>
+    <p class="tagline">One card at a time, everyone unfolds a little.</p>
+  </div>
+  <div class="lobby-actions">
+    <button class="lobby-primary" onclick="startPlayLive()">&#9654; Play Live</button>
+    <div class="lobby-label">online</div>
+    <div class="lobby-online">
+      <button class="act ghost" onclick="startHostSession()">Host Session</button>
+      <button class="act ghost" onclick="startJoinSession()">Join Session</button>
+    </div>
+  </div>
+</div>
+<!-- ── Game Screen ── -->
+<div id="screen-game" class="screen">
 <header>
   <div class="eyebrow">A Conversation Card Game</div>
   <h1>Un<em>fold</em></h1>
@@ -222,8 +270,18 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 
 <div class="hint">Best played out loud, in good company</div>
 <div class="toast" id="toast"></div>
+</div><!-- /screen-game -->
 
 <script>
+// ── Screen management ──────────────────────────────────────────────────────
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+function startPlayLive(){ showScreen('screen-game'); initGame(); }
+function startHostSession(){ showScreen('screen-game'); initGame(); showToast('Host flow coming soon',2000); }
+function startJoinSession(){ showScreen('screen-game'); initGame(); showToast('Join flow coming soon',2000); }
+
 const CATS = {
   icebreakers:{name:"Icebreakers", color:"var(--gold)", foot:"Easy openers. Answer on instinct.",
     cards:[
@@ -623,10 +681,13 @@ document.addEventListener('keydown',e=>{
   if(e.key==='f'||e.key==='F') handleCardTap();
 });
 
-initStorage();
-buildChips();
-buildPool();
-updateChips();
+function initGame(){
+  initStorage();
+  buildChips();
+  buildPool();
+  updateChips();
+}
+// Lobby is the entry point — do NOT auto-init game on load
 </script>
 
 <style>
