@@ -298,7 +298,7 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
   import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
     from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
-  import { getFirestore, doc, setDoc, getDoc }
+  import { getFirestore, doc, setDoc, getDoc, collection, getDocs }
     from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
 
   const firebaseConfig = {
@@ -320,6 +320,17 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
   window.firestoreDoc = doc;
   window.firestoreSetDoc = setDoc;
   window.firestoreGetDoc = getDoc;
+  // Start fetching remote decks immediately; resolve to {} on any error
+  window._deckLoadPromise = getDocs(collection(db, 'decks'))
+    .then(snap => {
+      const extra = {};
+      snap.forEach(d => {
+        const data = d.data();
+        if(data.name && Array.isArray(data.cards)) extra[d.id] = data;
+      });
+      return extra;
+    })
+    .catch(() => ({}));
 
   // Expose globally for non-module scripts
   window.firebaseApp = app;
@@ -947,10 +958,13 @@ document.addEventListener('keydown',e=>{
 });
 
 function initGame(){
-  initStorage();
-  buildChips();
-  buildPool();
-  updateChips();
+  (window._deckLoadPromise || Promise.resolve({})).then(extra => {
+    Object.assign(CATS, extra);
+    initStorage();
+    buildChips();
+    buildPool();
+    updateChips();
+  });
 }
 // Lobby is the entry point � do NOT auto-init game on load
 if('serviceWorker' in navigator){
