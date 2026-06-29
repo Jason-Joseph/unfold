@@ -231,6 +231,50 @@ button.skipbtn{background:transparent;border-color:var(--ink);color:var(--ink)}
 }
 .end-actions{display:flex;flex-direction:column;gap:12px;width:100%;max-width:280px;}
 </style>
+<!-- Firebase -->
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+  import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged }
+    from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCw7Oc83HSy9vxF2z76N7QC6N4QCVmJOTw",
+    authDomain: "unfold-game-14a43.firebaseapp.com",
+    databaseURL: "https://unfold-game-14a43-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "unfold-game-14a43",
+    storageBucket: "unfold-game-14a43.firebasestorage.app",
+    messagingSenderId: "899733661467",
+    appId: "1:899733661467:web:7609b388f8f5634c1815be"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  // Expose globally for non-module scripts
+  window.firebaseApp = app;
+  window.firebaseAuth = auth;
+  window.firebaseProvider = provider;
+  window.currentUser = null;
+  window._authReady = false;
+  window._authCallbacks = [];
+
+  window.signInWithGoogle = () => signInWithPopup(auth, provider);
+  window.signOutUser = () => signOut(auth);
+  window.onAuthReady = (cb) => {
+    if(window._authReady) cb(window.currentUser);
+    else window._authCallbacks.push(cb);
+  };
+
+  onAuthStateChanged(auth, user => {
+    window.currentUser = user;
+    if(!window._authReady){
+      window._authReady = true;
+      window._authCallbacks.forEach(cb => cb(user));
+      window._authCallbacks = [];
+    }
+  });
+</script>
 </head>
 <body>
 <!-- ── Lobby Screen ── -->
